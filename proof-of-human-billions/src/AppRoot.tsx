@@ -46,8 +46,22 @@ export default function AppRoot() {
   return (
     <div className="min-h-screen">
       <header className="border-b border-slate-200 sticky top-0 backdrop-blur bg-white/80">
-        <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">Proof of Human</h1>
+        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex flex-col">
+            <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">Proof of Human</h1>
+            <div className="text-xs sm:text-sm text-slate-600">
+              created by
+              {" "}
+              <a
+                href="https://x.com/0xMelkoreth"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-brand hover:text-brandDark font-semibold hover:underline"
+              >
+                Melkor.eth
+              </a>
+            </div>
+          </div>
           <div className="flex items-center gap-3">
               <div className="text-base text-slate-900 font-bold">Score: {finalScore}</div>
           </div>
