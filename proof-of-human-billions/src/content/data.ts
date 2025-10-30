@@ -1,0 +1,58 @@
+export type ContentItem = {
+  id: string
+  type: 'text' | 'image'
+  content: string
+  origin: 'human' | 'ai'
+}
+
+export const CONTENT: ContentItem[] = [
+  // Text samples
+  { id: 't1', type: 'text', content: 'I once tried to bake bread in a coffee maker. The apartment smelled like ambition and burnt beans for a week.', origin: 'human' },
+  { id: 't2', type: 'text', content: 'The moon hums to the oceans in a language of tides; every shore is a listener.', origin: 'human' },
+  { id: 't3', type: 'text', content: 'A dragon hoards not gold but unanswered emails; every notification is another scale on its back.', origin: 'ai' },
+  { id: 't4', type: 'text', content: 'Remember to water your ideas; the good ones wilt quietly when ignored.', origin: 'ai' },
+  { id: 't5', type: 'text', content: 'Grandma says the secret ingredient is patience. Then she winks and adds butter.', origin: 'human' },
+  { id: 't6', type: 'text', content: 'In the city, traffic lights are the metronomes of impatience.', origin: 'ai' },
+  { id: 't7', type: 'text', content: 'My cat sits on my laptop because the warmest place in the house is apparently my deadline.', origin: 'human' },
+  { id: 't8', type: 'text', content: 'Silence stitched itself between us, a careful thread that held more than words.', origin: 'ai' },
+  { id: 't9', type: 'text', content: 'He laughed so hard milk came out of his nose, which is impressive given he was drinking tea.', origin: 'human' },
+  { id: 't10', type: 'text', content: 'Tomorrow is a rumor told by calendars.', origin: 'ai' },
+
+  // More text variety
+  { id: 't11', type: 'text', content: 'My sourdough starter and I are in a long-term relationship built on trust and bubbles.', origin: 'human' },
+  { id: 't12', type: 'text', content: 'Rain is just the sky forwarding you unread oceans.', origin: 'ai' },
+  { id: 't13', type: 'text', content: 'I pressed “later” on an update in 2017 and we still haven’t talked about it.', origin: 'human' },
+  { id: 't14', type: 'text', content: 'Windows of trains are rented horizons.', origin: 'ai' },
+  { id: 't15', type: 'text', content: 'My dog understands three commands: sit, stay, and judge silently.', origin: 'human' },
+  { id: 't16', type: 'text', content: 'The future keeps knocking with algorithmic knuckles.', origin: 'ai' },
+  { id: 't17', type: 'text', content: 'I microwave tea and I’m ready to face the consequences.', origin: 'human' },
+  { id: 't18', type: 'text', content: 'Memory is a playlist that refuses to shuffle.', origin: 'ai' },
+  { id: 't19', type: 'text', content: 'I once set a reminder to stand up and accidentally inspired the whole office.', origin: 'human' },
+  { id: 't20', type: 'text', content: 'Midnight is just noon without witnesses.', origin: 'ai' },
+
+  // Image samples (remote placeholders)
+  { id: 'i1', type: 'image', content: 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i2', type: 'image', content: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i3', type: 'image', content: 'https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i4', type: 'image', content: 'https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i5', type: 'image', content: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+
+  // AI-looking images (still remote placeholders; conceptually AI)
+  { id: 'i6', type: 'image', content: 'https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i7', type: 'image', content: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i8', type: 'image', content: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i9', type: 'image', content: 'https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i10', type: 'image', content: 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+
+  // Additional images (mix)
+  { id: 'i11', type: 'image', content: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i12', type: 'image', content: 'https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i13', type: 'image', content: 'https://images.unsplash.com/photo-1470259078422-826894b933aa?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i14', type: 'image', content: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i15', type: 'image', content: 'https://images.unsplash.com/photo-1520975928316-4f1f2bd8a2b4?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i16', type: 'image', content: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i17', type: 'image', content: 'https://images.unsplash.com/photo-1511763381995-8b3b91dc0e48?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i18', type: 'image', content: 'https://images.unsplash.com/photo-1543966888-7fdfc2af1f4b?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+  { id: 'i19', type: 'image', content: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop', origin: 'human' },
+  { id: 'i20', type: 'image', content: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop', origin: 'ai' },
+]
